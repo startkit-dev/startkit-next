@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+echo "Installing dependencies ..."
+npm install
+
+echo "Creating .env"
+cp -f .env.example .env

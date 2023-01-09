@@ -4,9 +4,12 @@
   "private": true,
   "scripts": {
     "build": "next build",
+    "check": "run-s type-check lint",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start"
+    "setup": "./bin/setup",
+    "start": "next start",
+    "type-check": "tsc --noEmit --pretty"
   },
   "dependencies": {
     "@next/font": "13.1.1",
@@ -20,6 +23,7 @@
     "@types/react-dom": "18.0.10",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",
+    "npm-run-all": "^4.1.5",
     "typescript": "4.9.4"
   }
 }
