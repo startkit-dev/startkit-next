@@ -1,10 +1,11 @@
-import './globals.css'
+import type { ReactNode } from "react";
+import "./globals.css";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+type Props = {
+  children: ReactNode;
+};
+
+export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
       {/*
@@ -14,5 +15,5 @@ export default function RootLayout({
       <head />
       <body>{children}</body>
     </html>
-  )
+  );
 }
