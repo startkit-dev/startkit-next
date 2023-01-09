@@ -3,6 +3,8 @@ import { Inter } from "@next/font/google"
 import clsx from "clsx"
 import { NextSeo } from "next-seo"
 
+import Analytics from "components/layout/Analytics"
+
 import type { ReactNode } from "react"
 
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"] })
@@ -49,6 +51,7 @@ export default function RootLayout({ children }: Props) {
           themeColor="#c026d3"
           titleTemplate="%s | StartKit"
         />
+        <Analytics />
       </head>
       <body>{children}</body>
     </html>
