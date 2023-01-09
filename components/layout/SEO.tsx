@@ -4,8 +4,7 @@ import { fullURL } from "lib/url-fns"
 
 export const NEXT_SEO_DEFAULT: NextSeoProps = {
   title: "StartKit",
-  description:
-    "StartKit is a sane starting place for building your Next.js apps",
+  description: "A sane way to start your next next project.",
   openGraph: {
     type: "website",
     url: fullURL(),

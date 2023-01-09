@@ -15,7 +15,10 @@ type Props = {
 
 export default function RootLayout({ children }: Props) {
   return (
-    <html lang="en" className={clsx(inter.variable, "bg-gray-50")}>
+    <html
+      lang="en"
+      className={clsx(inter.variable, "h-full font-sans antialiased")}
+    >
       {/*
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
@@ -51,9 +54,11 @@ export default function RootLayout({ children }: Props) {
           themeColor="#c026d3"
           titleTemplate="%s | StartKit"
         />
-        <Analytics />
       </head>
-      <body>{children}</body>
+      <body className="h-full bg-neutral-50 p-4 text-neutral-800 transition-colors dark:bg-neutral-900 dark:text-neutral-50">
+        <Analytics />
+        {children}
+      </body>
     </html>
   )
 }

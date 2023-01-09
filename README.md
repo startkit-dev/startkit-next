@@ -27,6 +27,7 @@ The app will be running at [http://localhost:3000](http://localhost:3000).
 - The beautiful [Inter](https://rsms.me/inter/) typeface.
 - [Next SEO](https://github.com/garmeeh/next-seo) for SEO handling.
 - [Jest](https://jestjs.io/) testing, optimized for Next.js
+- Automatic Dark Mode support (based on system setting).
 - Sane VSCode settings and recommended extensions
 
 ## Naming the project
