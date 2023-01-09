@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "check": "run-s type-check lint",
+    "check": "run-s type-check lint format:check",
     "dev": "next dev",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "lint": "next lint",
     "setup": "./bin/setup",
     "start": "next start",
@@ -22,11 +24,15 @@
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.48.0",
     "autoprefixer": "^10.4.13",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-tailwindcss": "^3.8.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.21",
+    "prettier": "^2.8.2",
     "tailwindcss": "^3.2.4",
     "typescript": "4.9.4"
   }

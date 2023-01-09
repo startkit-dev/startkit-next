@@ -1,13 +1,14 @@
-import type { ReactNode } from "react";
-import "./globals.css";
-import { Inter } from "@next/font/google";
-import clsx from "clsx";
+import "./globals.css"
+import { Inter } from "@next/font/google"
+import clsx from "clsx"
 
-const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
+import type { ReactNode } from "react"
+
+const inter = Inter({ variable: "--font-inter", subsets: ["latin"] })
 
 type Props = {
-  children: ReactNode;
-};
+  children: ReactNode
+}
 
 export default function RootLayout({ children }: Props) {
   return (
@@ -19,5 +20,5 @@ export default function RootLayout({ children }: Props) {
       <head />
       <body>{children}</body>
     </html>
-  );
+  )
 }

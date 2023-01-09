@@ -25,5 +25,5 @@ export default function Head() {
       />
       <link rel="manifest" href="/site.webmanifest" />
     </>
-  );
+  )
 }
