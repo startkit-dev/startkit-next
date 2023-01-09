@@ -26,6 +26,7 @@ The app will be running at [http://localhost:3000](http://localhost:3000).
 - [TailwindCSS](https://tailwindcss.com/) for utility-first CSS.
 - The beautiful [Inter](https://rsms.me/inter/) typeface.
 - [Next SEO](https://github.com/garmeeh/next-seo) for SEO handling.
+- [Jest](https://jestjs.io/) testing, optimized for Next.js
 - Sane VSCode settings and recommended extensions
 
 ## Naming the project

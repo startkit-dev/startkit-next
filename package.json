@@ -4,13 +4,14 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "check": "run-s type-check lint format:check",
+    "check": "run-s type-check lint format:check test",
     "dev": "next dev",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "next lint",
     "setup": "./bin/setup",
     "start": "next start",
+    "test": "jest --passWithNoTests",
     "type-check": "tsc --noEmit --pretty"
   },
   "dependencies": {
@@ -23,6 +24,9 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@types/jest": "^29.2.5",
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.10",
@@ -31,7 +35,10 @@
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",
     "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-jest": "^27.2.1",
     "eslint-plugin-tailwindcss": "^3.8.0",
+    "jest": "^29.3.1",
+    "jest-environment-jsdom": "^29.3.1",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.21",
     "prettier": "^2.8.2",
