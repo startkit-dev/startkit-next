@@ -2,6 +2,7 @@ export default function Head() {
   return (
     <>
       <title>StartKit</title>
+      <meta charSet="utf-8" />
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta name="description" content="Generated with StartKit" />
       <link rel="icon" href="/favicon.ico" />
