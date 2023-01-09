@@ -1,0 +1,31 @@
+#!/usr/bin/env zsh
+
+echo -n "What is your new project name (start_kit)?: "
+read project_name
+
+snake_name=${project_name//-/_}
+upper_name=${(U)project_name}
+dash_name=${snake_name//_/-}
+words=(${(s:_:)snake_name})
+class_name=${(j::)${(C)words}}
+
+mappings=("s/startkit/$snake_name/g" "s/start_kit/$snake_name/g" "s/START_KIT/$upper_name/g" "s/StartKit/$class_name/g" "s/start-kit/$dash_name/g")
+
+for mapping in $mappings
+do
+  echo "Renaming $mapping ..."
+  find app -type f -exec sed -i '' $mapping {} \;
+  find components -type f -exec sed -i '' $mapping {} \;
+  find lib -type f -exec sed -i '' $mapping {} \;
+  find pages -type f -exec sed -i '' $mapping {} \;
+  find bin -type f -exec sed -i '' $mapping {} \;
+  sed -i '' $mapping .env
+  sed -i '' $mapping .env.sample
+  sed -i '' $mapping package.json
+  sed -i '' $mapping README.md
+  sed -i '' $mapping .gitignore
+  sed -i '' $mapping bin/setup
+  sed -i '' $mapping public/robots.txt
+done
+
+npm i

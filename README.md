@@ -39,4 +39,9 @@ the following strings with your project name:
 - `startkit`
 - `start_kit`
 - `START_KIT`
-- `startkit.dev`
+
+A helper script has been included to make this easier:
+
+```sh
+./bin/rename
+```
