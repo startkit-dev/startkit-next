@@ -1,5 +1,17 @@
+import CheckIcon from "components/icons/Check"
 import GithubIcon from "components/icons/Github"
 import TwitterIcon from "components/icons/Twitter"
+
+const FEATURES = [
+  { title: "Typescript" },
+  { title: "ESLint + Prettier" },
+  { title: "TailwindCSS" },
+  { title: "Next SEO" },
+  { title: "Inter Font" },
+  { title: "Jest" },
+  { title: "Dark Mode" },
+  { title: "and so much more..." }
+]
 
 export default function Home() {
   return (
@@ -20,6 +32,15 @@ export default function Home() {
             </a>{" "}
             project.
           </span>
+        </div>
+
+        <div className="grid grid-cols-2 gap-2 sm:gap-4">
+          {FEATURES.map((f, i) => (
+            <div key={i} className="flex flex-row items-center space-x-2">
+              <CheckIcon className="h-4 w-4" />
+              <span>{f.title}</span>
+            </div>
+          ))}
         </div>
 
         <div className="flex flex-col items-center justify-center space-y-2">

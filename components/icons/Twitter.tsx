@@ -1,4 +1,3 @@
-import clsx from "clsx"
 import { SVGProps } from "react"
 
 export default function TwitterIcon({
