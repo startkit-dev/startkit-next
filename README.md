@@ -25,6 +25,7 @@ The app will be running at [http://localhost:3000](http://localhost:3000).
 - [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) for readable, safe code.
 - [TailwindCSS](https://tailwindcss.com/) for utility-first CSS.
 - The beautiful [Inter](https://rsms.me/inter/) typeface.
+- [Next SEO](https://github.com/garmeeh/next-seo)
 
 ## Naming the project
 
