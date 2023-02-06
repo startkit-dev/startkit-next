@@ -3,7 +3,7 @@ import { Inter } from "@next/font/google"
 import clsx from "clsx"
 import { NextSeo } from "next-seo"
 
-import Analytics from "components/layout/Analytics"
+import Analytics from "@/components/layout/Analytics"
 
 import type { ReactNode } from "react"
 

@@ -1,6 +1,6 @@
 import { NextSeo, NextSeoProps } from "next-seo"
 
-import { fullURL } from "lib/url-fns"
+import { fullURL } from "@/lib/url-fns"
 
 export const NEXT_SEO_DEFAULT: NextSeoProps = {
   title: "StartKit",
