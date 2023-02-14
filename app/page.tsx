@@ -1,6 +1,5 @@
-import CheckIcon from "@/components/icons/Check"
-import GithubIcon from "@/components/icons/Github"
-import TwitterIcon from "@/components/icons/Twitter"
+import { CheckIcon } from "@/components/icons/Check"
+import { GithubIcon, TwitterIcon } from "@/components/icons/social"
 
 const FEATURES = [
   { title: "Typescript" },
