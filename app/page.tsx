@@ -1,4 +1,5 @@
-import { CheckIcon } from "@/components/icons/Check"
+import { CheckIcon } from "@heroicons/react/24/solid"
+
 import { GithubIcon, TwitterIcon } from "@/components/icons/social"
 
 const FEATURES = [
